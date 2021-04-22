@@ -2,16 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const api = {
+  key: '74164a1085cc858b61130ea24feb437d',
+  baseURL: 'https://api.openweathermap.org/data/2.5/'
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App api={api}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
